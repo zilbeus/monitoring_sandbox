@@ -18,4 +18,4 @@ scrape_configs:
       - targets: ["localhost:9090"]
   - job_name: simple_server
     static_configs:
-      - targets: ["localhost:8090"]
+      - targets: ["simple_go_server:8090"]

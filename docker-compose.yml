@@ -11,3 +11,11 @@ services:
     container_name: prometheus
     volumes:
       - ./prometheus:/etc/prometheus
+
+  simple_go_server:
+    container_name: simple_go_server
+    build:
+      context: ./go_server
+      dockerfile: ./Dockerfile
+    ports:
+      - '8090:8090'

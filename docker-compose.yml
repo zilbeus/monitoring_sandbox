@@ -23,16 +23,6 @@ services:
     volumes:
       - ./alertmanager:/etc/alertmanager
 
-  teamsalerter:
-    image: quay.io/prometheusmsteams/prometheus-msteams
-    container_name: teamsalerter
-    restart: unless-stopped
-    environment:
-      - TEAMS_INCOMING_WEBHOOK_URL="https://outlook.office.com/webhook/xxx"
-      - TEAMS_REQUEST_URI=alertmanager
-    ports:
-      - '2000:2000'
-
   grafana:
     image: grafana/grafana
     container_name: grafana

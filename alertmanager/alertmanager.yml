@@ -7,3 +7,10 @@ receivers:
     webhook_configs:
       - url: '<INSERT_YOUR_WEBHOOK>'
         send_resolved: false
+    msteams_configs:
+      - webhook_url: '<INCOMING_WEBHOOK_URL'
+        send_resolved: true
+        title: '{{ template "msteams.default.title" . }}'
+        summary: '{{ template "msteams.default.summary" . }}'
+        text: '{{ template "msteams.default.text" . }}'
+        http_config: global.http_config

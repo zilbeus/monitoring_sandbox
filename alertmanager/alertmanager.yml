@@ -4,9 +4,6 @@ route:
   receiver: webhook_receiver
 receivers:
   - name: webhook_receiver
-    # webhook_configs:
-    #   - url: '<INSERT_YOUR_WEBHOOK>'
-    #     send_resolved: false
     msteams_configs:
       - webhook_url_file: webhook_secret.txt
         send_resolved: true

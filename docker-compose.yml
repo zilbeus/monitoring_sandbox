@@ -39,3 +39,11 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - '8090:8090'
+
+  simple_java_server:
+    container_name: simple_java_server
+    build:
+      context: ./java_server
+      dockerfile: ./Dockerfile
+    ports:
+      - '8080:8080'

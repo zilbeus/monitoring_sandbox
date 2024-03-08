@@ -1,3 +1,7 @@
 server
 webhook_secret.txt
 java_server/build
+java_server/.classpath 
+java_server/.gradle 
+java_server/.project 
+java_server/.settings 

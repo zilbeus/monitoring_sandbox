@@ -6,3 +6,4 @@ java_server/.gradle
 java_server/.project 
 java_server/.settings 
 .idea
+.data
